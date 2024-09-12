@@ -1,0 +1,75 @@
+/* Reseta o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5e5b5b; /* Cor de fundo leve */
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-color: #b41717; 
+}
+
+q {
+    display: block;
+    font-style: italic;
+    color: #000000; /* Cinza claro */
+    margin-bottom: 10px;
+}
+
+/* Estilo para a galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background-color: #fff; /* Fundo branco para os itens */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(56, 56, 56, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03); /* Zoom suave ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para separadores e margens */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h2 {
+        font-size: 1.2em;
+    }
+}
